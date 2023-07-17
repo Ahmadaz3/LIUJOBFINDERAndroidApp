@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">LIU JOB FINDER</string>
+    <string name="pre_signUp_name">Pre-Sign Up</string>
+    <string name="LoginPage_name">Login</string>
+    <string name="RegisterNow">Register Now</string>
+    <string name="DoNotHaveAccount">Do not have an account?</string>
+    <string name="userName_hint">Email Address</string>
+    <string name="passwordHint">Password</string>
+    <string name="Liu_sign_up">Liu Sign Up:</string>
+    <string name="Business_sign_up">Business Sign up:</string>
+    <string name="StudentEmailHint">ID@student.liu.edu.lb</string>
+    <string-array name="spinner_Major">
+        <item>Computer Science</item>
+        <item>Biology</item>
+        <item>physics</item>
+        <item>Business Marketing</item>
+    </string-array>
+    <string-array name="spinner_Campus">
+        <item>Bekaa</item>
+        <item>Beriut</item>
+        <item>Tyre</item>
+    </string-array>
+    <string-array name="spinner_BSize">
+        <item>Micro:less than 10 employee</item>
+        <item>Small:10 to 49 employees</item>
+        <item>Medium:50 to 249 employees</item>
+        <item>Large:250 or more employees</item>
+    </string-array>
+    <string-array name="spinner_BType">
+        <item>Corporation</item>
+        <item>Nonprofit</item>
+        <item>Sole Proprietorship</item>
+        <item>Limited Liability Company (LLC)</item>
+    </string-array>
+    <string-array name="spinner_JType">
+        <item>Full Time</item>
+        <item>Part Time</item>
+        <item>Internship</item>
+    </string-array>
+    <string-array name="spinner_JWorkPlace">
+        <item>on-site</item>
+        <item>on-line</item>
+        <item>Hybrid</item>
+    </string-array>
+    <string-array name="spinner_JobDomain">
+        <item>Computer Science</item>
+        <item>Business Marketing</item>
+        <item>Physics</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="work_place">Work place:</string>
+    <string name="domain">Domain:</string>
+    <string name="job_requierments">Job Requirements</string>
+    <string name="job_location">Job Location</string>
+    <string name="job_description">Job Description</string>
+    <string name="add_job">Add job</string>
+    <string name="job_name">Job Name</string>
+    <string name="add">Add</string>
+    <string name="job_type">Job Type:</string>
+    <string name="post_detalis">Post Detalis</string>
+    <string name="business_detalis">Business Detalis</string>
+    <string name="approve_btn">Approve</string>
+    <string name="decline_Post">Decline</string>
+    <string name="instructor_pre">instructor</string>
+    <string name="student_pre">Student</string>
+    <string name="business_pre">Business</string>
+    <string name="check_student_profile">Check Student Profile</string>
+    <string name="schdulde_interview">schdulde Interview:</string>
+    <string name="set_interview_location">Set Interview Location:</string>
+    <string name="set_interview_date_and_time">Set interview Date and Time:</string>
+</resources>

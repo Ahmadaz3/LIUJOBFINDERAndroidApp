@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPostFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="403dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/font2"
+            android:text="@string/work_place"
+            android:textColor="#004b8e"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/updateWorkPlaceType"
+            android:layout_width="240dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:entries="@array/spinner_JWorkPlace"
+            tools:ignore="TouchTargetSizeCheck,VisualLintBounds" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/updateJobReq"
+        android:layout_width="327dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/edittexts"
+        android:backgroundTint="#BAB5B5"
+        android:ems="10"
+        android:hint="@string/job_requierments"
+        android:inputType="textMultiLine"
+        android:padding="9dp"
+        android:textColor="#004b8e"
+        android:textColorHint="#004b8e"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateJobDescription" />
+
+    <EditText
+        android:id="@+id/updateJobLocation"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_margin="15dp"
+        android:autofillHints=""
+        android:background="@drawable/edittexts"
+        android:backgroundTint="#BAB5B5"
+        android:ems="10"
+        android:hint="@string/job_location"
+        android:inputType="textPersonName"
+        android:padding="9dp"
+        android:textColor="#004b8e"
+        android:textColorHint="#004b8e"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateJname"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/updateJobDescription"
+        android:layout_width="327dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/edittexts"
+        android:backgroundTint="#BAB5B5"
+        android:ems="10"
+        android:hint="@string/job_description"
+        android:inputType="textMultiLine"
+        android:padding="9dp"
+        android:textColor="#004b8e"
+        android:textColorHint="#0B448F"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateJobLocation" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/font2"
+        android:text="@string/add_job"
+        android:textColor="#2672B6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/updateJname"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_margin="15dp"
+        android:autofillHints=""
+        android:background="@drawable/edittexts"
+        android:backgroundTint="#BAB5B5"
+        android:ems="10"
+        android:hint="@string/job_name"
+        android:inputType="textPersonName"
+        android:padding="9dp"
+        android:textColor="#004b8e"
+        android:textColorHint="#0B448F"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/JAdd"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/signupbutton"
+        android:text="@string/add"
+        android:textColor="#0B508E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="403dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateJobReq">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/font2"
+            android:text="@string/job_type"
+            android:textColor="#004b8e"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/updateJobType"
+            android:layout_width="240dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/spinner_JType"
+            tools:ignore="TextSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,VisualLintBounds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="396dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/font2"
+            android:text="@string/domain"
+            android:textColor="#004b8e"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/UpdateDomianType"
+            android:layout_width="240dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="35dp"
+            android:entries="@array/spinner_JobDomain"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

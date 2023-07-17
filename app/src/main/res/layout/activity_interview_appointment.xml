@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InterviewAppointment">
+
+    <TextView
+        android:id="@+id/interJobName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:textColor="#004b8e"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btncheckStudentProfile"
+        android:layout_width="250dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/signupbutton"
+        android:text="@string/check_student_profile"
+        android:textColor="#004b8e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interJobName" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="@string/schdulde_interview"
+        android:textColor="#004b8e"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncheckStudentProfile" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/set_interview_location"
+        android:textColor="#004b8e"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1" />
+
+    <EditText
+        android:id="@+id/edtInterviewLocation"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/edittexts"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+    <EditText
+        android:id="@+id/edtDateAndTime"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/edittexts"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t3" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/set_interview_date_and_time"
+        android:textColor="#004b8e"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtInterviewLocation" />
+
+    <Button
+        android:id="@+id/btnConfirmInterview"
+        android:layout_width="189dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/signupbutton"
+        android:text="Confirm Interview"
+        android:textColor="#004b8e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDateAndTime" />
+
+    <TextView
+        android:id="@+id/interViewStatus"
+        android:layout_width="271dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="136dp"
+        android:gravity="center"
+        android:textColor="#083693"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncheckStudentProfile" />
+
+    <Button
+        android:id="@+id/btnIbterviewDone"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/signupbutton"
+        android:text="Interview Done"
+        android:textColor="#0C4888"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interViewStatus" />
+</androidx.constraintlayout.widget.ConstraintLayout>

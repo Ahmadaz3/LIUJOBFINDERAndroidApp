@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".BusinessActivity">
+
+    <EditText
+        android:id="@+id/BLocation"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittexts"
+        android:drawableLeft="@drawable/baseline_add_location_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:gravity="center|start"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <Button
+        android:id="@+id/BsignUp"
+        android:layout_width="141dp"
+        android:layout_height="47dp"
+        android:background="@drawable/submitbutton"
+        android:text="Sign Up"
+        android:textColor="#EFF1F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btype"
+        app:layout_constraintVertical_bias="0.257" />
+
+    <Spinner
+        android:id="@+id/Btype"
+        android:layout_width="140dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/spinner_BType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font2"
+        android:text="Business Size:"
+        android:textColor="#004b8e"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/Bweb" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font2"
+        android:text="Location:"
+        android:textColor="#004b8e"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/BpassEd"
+        app:layout_constraintTop_toBottomOf="@+id/BpassEd" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font2"
+        android:text="Business Type:"
+        android:textColor="#004b8e"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bweb" />
+
+    <EditText
+        android:id="@+id/Bweb"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittexts"
+        android:drawableLeft="@drawable/baseline_web_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:gravity="center|start"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font2"
+        android:text="Company Website:"
+        android:textColor="#004b8e"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/BLocation"
+        app:layout_constraintTop_toBottomOf="@+id/BLocation" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font2"
+        android:text="Create Password:"
+        android:textColor="#004b8e"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/BemailEd"
+        app:layout_constraintTop_toBottomOf="@+id/BemailEd" />
+
+    <EditText
+        android:id="@+id/BpassEd"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittexts"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:gravity="center|start"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/BemailEd"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittexts"
+        android:drawableLeft="@drawable/baseline_attach_email_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:gravity="center|start"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font2"
+        android:text="Business Email:"
+        android:textColor="#004b8e"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="@+id/BnameEd"
+        app:layout_constraintTop_toBottomOf="@+id/BnameEd" />
+
+    <EditText
+        android:id="@+id/BnameEd"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittexts"
+        android:drawableLeft="@drawable/baseline_business_center_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:gravity="center|start"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/font2"
+        android:text="Business Name:"
+        android:textColor="#004b8e"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addJobTv2" />
+
+    <TextView
+        android:id="@+id/addJobTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/font2"
+        android:text="Business SignUp"
+        android:textColor="#0C69BC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/BSize"
+        android:layout_width="193dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/spinner_BSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toEndOf="@+id/Btype"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/liulogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SeniorProjectTest2"
+        tools:targetApi="31">
+        <activity
+            android:name=".Resources"
+            android:exported="false" />
+        <activity
+            android:name=".feedbacks"
+            android:exported="false" />
+        <activity
+            android:name=".RecommendsJobsForStudent"
+            android:exported="false" />
+        <activity
+            android:name=".RecommendJob"
+            android:exported="false" />
+        <activity
+            android:name=".StudentJobProfile"
+            android:exported="false" />
+        <activity
+            android:name=".InterviewDetails"
+            android:exported="false" />
+        <activity
+            android:name=".StudentInterViews"
+            android:exported="false" />
+        <activity
+            android:name=".InterviewAppointment"
+            android:exported="false" />
+        <activity
+            android:name=".StudentProfile"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityStudent"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyForJobStudent"
+            android:exported="false" />
+        <activity
+            android:name=".BusinessDetails"
+            android:exported="false" />
+        <activity
+            android:name=".JobDetalis"
+            android:exported="false" />
+        <activity
+            android:name=".AdminApprove"
+            android:exported="false" />
+        <activity
+            android:name=".BusinessEditDeleteJob"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".InstructorHome"
+            android:exported="false" />
+        <activity
+            android:name=".BusinessHome"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".StudentHome"
+            android:exported="false" />
+        <activity
+            android:name=".InstructorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BusinessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PreSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

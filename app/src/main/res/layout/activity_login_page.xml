@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackcolor"
+    tools:context=".LoginPage">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="319dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="152dp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:text="@string/LoginPage_name"
+        android:textColor="#5A9EDC"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/LoginPass"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/editextbackground"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/passwordHint"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="#100F0F"
+        android:textColorHint="#004b8e"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginEmail" />
+
+    <EditText
+        android:id="@+id/LoginEmail"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/editextbackground"
+        android:drawableLeft="@drawable/baseline_attach_email_24"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/userName_hint"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textColor="#070707"
+        android:textColorHint="#004b8e"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:background="@drawable/submitbutton"
+        android:text="@string/LoginPage_name"
+        android:textColor="#FAFAFA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginLinear" />
+
+    <LinearLayout
+        android:id="@+id/LoginLinear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPass">
+
+        <TextView
+            android:id="@+id/Q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="@string/DoNotHaveAccount"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/signUpTV"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/RegisterNow"
+            android:textColor="#06325E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/AnimLoadingLogin"
+        android:layout_width="219dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="12dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPass"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/splashloading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
